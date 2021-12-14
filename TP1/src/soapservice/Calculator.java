@@ -13,8 +13,18 @@ public class Calculator {
     };
 
     @WebMethod
-    public int substract(@WebParam(name="first") int first, @WebParam(name="second") int second){
+    public int substract (@WebParam(name="first") int first, @WebParam(name="second") int second){
         return first - second;
     };
+
+    @WebMethod
+    public int mult (@WebParam(name= "first") int first , @WebParam(name= "second") int second) {
+        return first * second;
+    } 
     
+    @WebMethod
+    public int div (@WebParam(name= "first") int first , @WebParam(name= "second") int second)  {
+        return first / second;
+    } 
+
 }
